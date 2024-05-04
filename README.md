@@ -1,7 +1,7 @@
 # Movie Management System REST API
 
-This API manages movies, allowing users to add, rate, and retrieve movies. 
-It includes features like filtering, sorting, and pagination. 
+This API manages movies, allowing users or admins to add, update, delete, rate and retrieve movies or ratings. 
+It includes features like filtering, sorting, versioning, caching and pagination. 
 Built with .NET, it uses Dapper for ORM, PostgreSQL for the database, and supports caching, API versioning, and JWT authentication.
 
 ### Prerequisites
