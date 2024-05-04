@@ -1,4 +1,4 @@
-# Movie Management System API
+# Movie Management System REST API
 
 This API manages movies, allowing users to add, rate, and retrieve movies. 
 It includes features like filtering, sorting, and pagination. 
