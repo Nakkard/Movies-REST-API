@@ -10,7 +10,7 @@ namespace Identity.Api.Controllers;
 [ApiController]
 public class IdentityController : ControllerBase
 {
-    private const string TokenSecret = "ForTheLoveOfGodStoreAndLoadThisSecurely";
+    private const string TokenSecret = "KAsjdjiqjd8A21hh3hasdhashdwadW2hdKJWD";
     private static readonly TimeSpan TokenLifetime = TimeSpan.FromHours(8);
 
     [HttpPost("token")]
@@ -47,8 +47,8 @@ public class IdentityController : ControllerBase
         {
             Subject = new ClaimsIdentity(claims),
             Expires = DateTime.UtcNow.Add(TokenLifetime),
-            Issuer = "https://id.nickchapsas.com",
-            Audience = "https://movies.nickchapsas.com",
+            Issuer = "https://id.nakard.com",
+            Audience = "https://movies.nakard.com",
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
         };
         
