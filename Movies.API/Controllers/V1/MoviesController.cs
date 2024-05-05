@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Movies.API.Auth;
@@ -8,6 +9,7 @@ using Movies.Contracts.Requests.V1;
 namespace Movies.API.Controllers.V1;
 
 [ApiController]
+[ApiVersion(1.0)]
 public class MoviesController : ControllerBase
 {
     private readonly IMovieService _movieService;
